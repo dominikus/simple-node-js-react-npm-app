@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install' 
+                sh 'npm config set proxy http://UC00001:F8416987@194.114.63.23:8080; npm config set https-proxy http://UC00001:F8416987@194.114.63.23:8080; npm install' 
             }
         }
     }
